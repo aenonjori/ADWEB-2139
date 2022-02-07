@@ -1,0 +1,86 @@
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link href='https://fonts.googleapis.com/css?family=Alatsi' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<hr>
+<div class="Gradebook" style="background-color:slategray; font-size: 32px; font-family:'Alatsi';">
+<h1>Gradebook</h1>
+<b>
+<img style="width:100%; height:30%;" src={{imageUrl}} />
+<br>
+Enter your name: <input type="text" [(ngModel)]="studName">
+<hr>
+Input your Prelim grade: <p><input type="number" [(ngModel)]='prelim' class="form-control" placeholder ="Prelim"/> </p>
+Input your Midterm grade:<p><input type="number" [(ngModel)]='midterm' class="form-control" placeholder ="Midterm"/> </p>
+Input your Finals grade:<p><input type="number" [(ngModel)]='final' class="form-control" placeholder ="Final"/> </p>
+<hr>
+<p>Hello, {{studName}} </p>
+<p>Prelim Grade: {{prelim}} </p>
+<p>Midterm Grade: {{midterm}}</p>
+<p>Final Grade: {{final}}</p>
+<p>Average: {{(prelim+midterm+final)/3}}</p>
+</b>
+</div>
+
+<!-- Ng Directives Demo-->
+<hr>
+<div class="bg" style="background-color: rgb(39, 39, 39); color: white;">
+<div class="ngefs" style="margin: auto;
+width: 50%;
+padding:15px;
+font-family:'Abel';
+font-size: 25px;">
+
+<!-- ngIf Directive Demo-->
+<div *ngif="false">Display this message</div>
+
+<!-- ngIfElse Directives Demo-->
+<p>ngIfElse Directive Example</p>
+
+<div *ngif="isLogin; else isLogOut">Hello you are logged IN</div>
+<ng-template #isLogOut>You're logged out..</ng-template>
+<hr>
+
+<!-- ngFor Example 1-->
+<h4>ngFor Directive</h4>
+
+<ul>
+    <li *ngFor="let l of list">
+        {{l}}
+    </li>
+</ul>
+
+<!-- ngFor Example 2-->
+<h4>Another ngFor Example 2</h4>
+
+<ul> <li *ngFor="let std of studentArr; trackBy: trackByData"> {{std.name}}</li></ul>
+<br>
+
+<hr>
+
+<!--ngFor Example 3-->
+<h3 class="p-3 text-center">Angular - Display a list of items ngFor</h3>
+<div class="container">
+    <table class="table table-bordered table-dark">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Role</th>
+            </tr>
+        </thead>
+    <tbody>
+        <tr *ngFor="let user of staff">
+            <td>{{user.firstName}} {{user.lastName}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.role}}</td>
+        </tr> 
+    </tbody>
+  </table>
+</div>
+</div>
+
+<hr>
+<br>
