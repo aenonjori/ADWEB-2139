@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="initial-scale=1, minimum-scale=1, width=device-width" name="viewport">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Open+Sans:wght@300&family=Urbanist:wght@500&display=swap" rel="stylesheet"> 
+    
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+      
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+      
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+      }
+      </script>
+
+<style>
+  body {
+  overflow: hidden; /* Hide scrollbars */
+}
+ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+li {
+  float: right;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  text-decoration: none;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 19px;
+
+}
+li a:hover {
+  background-color: #2D2B98;
+  text-decoration: none;
+  color: white;
+}
+body{
+  background-color: #000060;
+}
+.hello{
+    color: #7BE1C6;
+    font-size: 62px;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    font-family: 'Bitter', serif;
+}
+.aenon{
+    color: white;
+    font-size: 45px;
+    position: absolute;
+    top: 35%;
+    left: 8%;
+    font-family: 'Open Sans', sans-serif;
+
+}
+.port{
+    color: #7BE1C6;
+    font-size: 78px;
+    position: absolute;
+    top: 55%;
+    left: 26%;
+    font-family: 'Bitter', serif;
+}
+.vl{
+    height: 700px;
+    border-left: 6px solid #4542CA;
+    position: absolute;
+    left: 50%;
+}
+.slide_img{
+  position: absolute;
+  top: 32%;
+  left: 1060px;
+  width: 51%;
+  height: 51%;
+}
+.slide_img img{
+  width: 80%;
+  height: 80%;
+}
+.btn{
+  position: relative;
+  border: none;
+  outline: none;
+  background: #7BE1C6;
+  padding: 10px 30px;
+  color: white;
+  cursor: pointer;
+  margin: 10px auto;
+  top: 580px;
+  left: 1400px;
+}
+.btn:hover{
+  background: rgb(1, 130, 134);
+  padding: 7px 28px;
+}
+.overlay{
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transition: .5s ease;
+  height: 30%;
+  top: 50%;
+  right: 20%;
+  color: aliceblue;
+  width: 80%;
+  text-align: center;
+}
+.feat{
+  color: #7BE1C6;
+  font-size: 62px;
+  position: absolute;
+  top: 13%;
+  right: 22%;
+  font-family: 'Bitter', serif;
+}
+.works{
+  color: #ffffff;
+  font-size: 32px;
+  position: absolute;
+  top: 23%;
+  right: 27.3%;
+  font-family: 'Bitter', serif;
+}
+.skills{
+  color: #7BE1C6;;
+  font-size: 24px;
+  position: absolute;
+  top: 78%;
+  left: 10%;
+  font-family: 'Bitter', serif;
+}
+.lang{
+  color: #ffffff;;
+  font-size: 24px;
+  position: absolute;
+  top: 78%;
+  left: 15%;
+  font-family: 'Bitter', serif;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a class="active" href="#home">Home</a></li>
+</ul>
+
+<div class="hello">Hello,</div>
+<div class="aenon">&emsp;&emsp;&emsp;I'm Aenon, a visual designer<br> who specialize at UI/UX <br>and welcome to my</div>
+<div class="port">Portfolio</div>
+
+<div class="skills">Skills: </div>
+<div class="lang">&nbsp; HTML |&nbsp; CSS |&nbsp; JAVASCRIPT</div>
+
+<div class="feat">Featured Works</div>
+
+
+<div class="works">Recently created works: </div>
+<div class="vl"></div>
+
+
+  <div class="mySlides">  
+  <div class="slide_img" id="one">
+    <img src="img/img1.png">
+    <div class="overlay">
+      <div class="text"><br><h3>Holy Angel Uni. Website</h3>
+    <p>Created: 2020</p>
+      </div></div></div></div>
+
+  <div class="mySlides">  
+  <div class="slide_img" id="two">
+    <img src="img/img2.png">
+    <div class="overlay">
+      <div class="text"><br><h3>Database Project</h3>
+    <p>Date Created: 2021</p>
+  </div></div></div></div>
+
+  <div class="mySlides">  
+  <div class="slide_img" id="three">
+    <img src="img/img3.png">
+    <div class="overlay">
+      <div class="text"><br><h3>LDM Pharmacy</h3>
+    <p>Date Created: 2021</p>
+  </div></div></div></div>
+
+  <div class="mySlides">  
+  <div class="slide_img" id="four">
+    <img src="img/img4.png">
+    <div class="overlay">
+      <div class="text"><br><h3>C.E.A</h3>
+    <p>Date Created: 2020</p>
+  </div></div></div></div>
+
+  <div class="mySlides">  
+  <div class="slide_img" id="five">
+    <img src="img/img5.png">
+    <div class="overlay">
+      <div class="text"><br><h3>Art Haven</h3>
+    <p>Date Created: 2021</p>
+</div></div></div></div>
+
+
+<button class="btn" onclick="plusDivs(-1)">&#10094;</button>
+<button class="btn" onclick="plusDivs(+1)">&#10095;</button>
+
+</body>
+</html>
