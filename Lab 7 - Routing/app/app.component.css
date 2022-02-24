@@ -1,0 +1,25 @@
+nav{
+    padding: 1%;
+    background-color: darkslategray;
+    font-family: 'Gudea', sans-serif;
+    font-size: 25px;
+}
+#nav-item{
+    position: relative;
+    color: white;
+    border-bottom: goldenrod;
+    text-decoration: none;
+    top: -80px;
+    float: right;
+}
+#nav-item:hover{
+    color: gold;
+    font-size: 23px;
+}
+a{
+    padding-right: 2%;
+}
+#logo{
+    width: 8%;
+    float: center;
+}

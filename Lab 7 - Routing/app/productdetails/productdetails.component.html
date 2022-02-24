@@ -1,0 +1,26 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100&family=Caveat&family=Saira+Condensed&family=Secular+One&family=Shippori+Antique+B1&family=Tajawal:wght@300&display=swap" rel="stylesheet">
+<br>
+<p class="text-center" id="header">Product Information</p>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+          <th scope="col">Product ID</th>
+          <th scope="col">Product</th>
+          <th scope="col">Name</th>
+          <th scope="col">Description</th>
+        </tr>
+      </thead>
+  
+
+      <tbody>
+        <tr *ngFor="let i of Products">
+          <td>{{i.id}}</td>
+          <td><img id="image" [src]="i.image"/> </td>
+          <td> {{i.name}} </td>
+          <td> {{i.description}}</td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
