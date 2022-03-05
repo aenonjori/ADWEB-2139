@@ -1,0 +1,25 @@
+nav{
+    padding: 0.5%;
+    background-color: #FFB81D;
+    font-family: 'Shippori Antique B1', sans-serif;
+    font-size: 17px;
+}
+
+#nav-item{
+    color: #101820FF;
+    border-bottom: 2px solid #FFB81D;
+}
+
+#nav-item:hover{
+    border-bottom: 2px solid #101820FF;
+    transition: 0.5s;
+}
+
+a{
+    padding-right: 10%;
+}
+
+#logo{
+    width: 7%;
+    height: 5%;
+}
