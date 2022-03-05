@@ -1,0 +1,45 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<br><h1 class="text-center">List from Main</h1>
+<table class="table table-dark">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Username</th>
+        <th scope="col">Email</th>
+        <th scope="col">Website</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let data of httpusers;">
+        <th>{{data.id}}</th>
+        <td>{{data.name}}</td>
+        <td>{{data.username}}</td>
+        <td>{{data.email}}</td>
+        <td>{{data.website}}</td>
+      </tr>
+    </tbody>
+</table>
+
+<!--Required 2-->
+
+<br><h1 class="text-center">List from Albums</h1>
+<table class="table table-striped table-dark">
+    <thead>
+      <tr>
+        <th scope="col">User's ID</th>
+        <th scope="col">ID</th>
+        <th scope="col">Title</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let data of httplimit;">
+        <th>{{data.userId}}</th>
+        <td>{{data.id}}</td>
+        <td>{{data.title}}</td>
+      </tr>
+    </tbody>
+</table>
